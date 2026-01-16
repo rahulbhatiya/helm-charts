@@ -235,3 +235,8 @@ Return ServiceMonitor labels
 {{ toYaml . }}
 {{- end }}
 {{- end -}}
+
+{{- define "keycloak.initContainerImage" -}}
+{{- $registry := default .image.registry $.Values.global.imageRegistry -}}
+{{- printf "%s/%s:%s" $registry .image.repository .image.tag -}}
+{{- end -}}
