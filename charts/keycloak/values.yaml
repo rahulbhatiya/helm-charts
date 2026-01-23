@@ -219,7 +219,6 @@ realm:
   ## @param realm.configFile Json config for initial realm configuration, mounted in /opt/keycloak/data/import
   configFile: ""
   existingSecret: ""
-  secretKey: realm.json
 
 ## @section Features Configuration
 features:
